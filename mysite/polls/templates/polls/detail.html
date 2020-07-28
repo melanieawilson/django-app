@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-  </head>
-  <body>
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+<div class="jumbotron">
 
 <h1>{{ question.question_text }}</h1>
 
@@ -18,6 +15,6 @@
 {% endfor %}
 <input type="submit" value="Vote">
 </form>
-
- </body>
-</html>
+</div>
+</div>
+{% endblock %}
